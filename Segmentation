@@ -1,7 +1,7 @@
 
 # Open file for reading in text mode (default mode)
-f1 = open("C:\CSCI517\output.txt")
-f2 = open("C:\CSCI517\output1.txt")
+f1 = open("C:\CSCI\output.txt")
+f2 = open("C:\CSCI\output1.txt")
 
 
 # Read the first line from the files
