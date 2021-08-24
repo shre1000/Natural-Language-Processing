@@ -120,7 +120,7 @@ def dbscan(m, eps, min_points):
                 cluster_id = cluster_id + 1
     return classifications
 
-# ask about SSE calculation? coorect or not? 
+
 def calculate_SSE(dic_of_cluster):
     sum_of_points =0
     sum_of_cluster = 0
