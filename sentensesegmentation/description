@@ -27,6 +27,6 @@ Since program has hard coding of abbreviation of Mr. and MR., it will not work f
 
 How could I have improved program if given more time?
 
-For improvement, I could have added more abbreviations (two characters followed by (.) for example, BE.) in the regex. Also, rather than hard coding them I could have come up with regex pattern which will match those abbreviations.
+	For improvement, I could have added more abbreviations (two characters followed by (.) for example, BE.) in the regex. Also, rather than hard coding them I could have come up with regex pattern which will match those abbreviations.
 
-Further, sentence splitting over quotations could have been improved. I could have added checking for preceding character whether if it is alphabet or not. So if it is alphabet, we can conclude that is not end of sentence and this is quote in the middle of sentence. 
+	Further, sentence splitting over quotations could have been improved. I could have added checking for preceding character whether if it is alphabet or not. So if it is alphabet, we can conclude that is not end of sentence and this is quote in the middle of sentence. 
