@@ -59,7 +59,7 @@ plt.show()
 '''
 tfidf_matrix = pickle.load(open("save.p", "rb"))
 
-#ask about elbow graph to professor. and eps value.
+
 def eps_value_calculation(cluster_value):
     ns = cluster_value
     nbrs = NearestNeighbors(n_neighbors=ns).fit(tfidf_matrix)
@@ -177,7 +177,7 @@ def test_dbscan():
     making_dir_of_cluster(classification_array, m)
 
 test_dbscan()
-# ask about minpoint value
+
 
 '''
 min_points= 11
