@@ -1,29 +1,21 @@
 
-#CSCI 517 Assignment 1: Sentence Segmentation
 
 
 import re
 
 data = ""
 
-with open("C:\CSCI517\input.txt", "r") as myinputfile:
+with open("C:\CSCI\input.txt", "r") as myinputfile:
 	for line in myinputfile.readlines():
 		if re.search('\S', line): 
 			data = data + line
 		
 myinputfile.close()
 	
-#sentenses = re.split('(?<!\w\.\w.)(?<![A-Z][a-z]\.)(?<![A-Z][A-Z]\.)(?<=\.|\?)\s', data) old one. below good n new.
-#sentenses = re.split('(?<!\w\.\w.)(?<!\w\.\w.\w\.\w\.)(?<![A-Z]\.)(?<!MR.|Mr.)(?<=\.|\?|\")\s', data) this is corrct.  down improvment
-#sentenses = re.split('(?<!\w\.\w.)(?<!\w\.\w.\w\.\w\.)(?<![A-Z]\.)(?<!MR.|Mr.|\.\.\.)(?<=\.|\?|\]|"[A-Z][a-z]\.")\s', data)
-
-#incorrect latest 4 one(?<!\w\.\w.)(?<!\w\.\w.\w\.\w\.)(?<![A-Z]\.)(?<!MR.|Mr.|\.\.\.)(?<=\.|\?|]|(?!\.)\")\s
-# go for this in final file sentenses = re.split('(?<!\w\.\w.)(?<!\w\.\w.\w\.\w\.)(?<![A-Z]\.)(?<!MR.|Mr.|\.\.\.)(?<=\.|\?|\]|\")\s' , data)
-#above is accurate
 
 sentenses = re.split('(?<!\w\.\w.)(?<!\w\.\w.\w\.\w)(?<![A-Z]\.)(?<!MR.|Mr.|\.\.\.)(?<!\;\"|\,\")(?<=\.|\?|\]|\")\s' , data)
 
-myoutputfile = open("C:\CSCI517\output1.txt", "w")
+myoutputfile = open("C:\CSCI\output1.txt", "w")
 
 i = 1
 
