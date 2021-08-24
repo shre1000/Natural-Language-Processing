@@ -2,7 +2,7 @@ from nltk.tokenize import sent_tokenize
 import re
 
 
-with open("C:\CSCI517\input.txt", "r") as myinputfile:
+with open("C:\CSCI\input.txt", "r") as myinputfile:
 	data = myinputfile.read()
 	
 myinputfile.close()
@@ -13,7 +13,7 @@ a = len(sent_tokenize_list)
 
 print (a)
 
-myoutputfile = open("C:\CSCI517\output1.txt", "w")
+myoutputfile = open("C:\CSCI\output1.txt", "w")
 
 #i = 1
 
