@@ -1,4 +1,4 @@
-# CSCI 517: Assignment 2:  You Write I Fix
+#Assignment 2:  You Write I Fix
 
 
 import re
